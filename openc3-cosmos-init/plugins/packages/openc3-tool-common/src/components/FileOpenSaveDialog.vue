@@ -88,7 +88,7 @@
             </v-row>
             <v-row class="my-2">
               <v-text-field
-                v-model="chosenFile"
+                v-model="selectedFilePath"
                 hide-details
                 label="Filename"
                 data-test="file-open-save-filename"

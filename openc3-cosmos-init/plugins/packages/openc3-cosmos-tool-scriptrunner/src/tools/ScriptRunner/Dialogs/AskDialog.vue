@@ -33,7 +33,7 @@
           <v-card-text>
             <div class="question">{{ question }}</div>
             <v-text-field
-              v-model="userInput"
+              v-model="userInputValue"
               autofocus
               data-test="ask-value-input"
               :type="password ? 'password' : 'text'"

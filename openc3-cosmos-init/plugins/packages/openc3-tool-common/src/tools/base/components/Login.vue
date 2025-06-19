@@ -31,7 +31,7 @@
       <v-form>
         <v-text-field
           v-if="isSet && reset"
-          v-model="previousPassword"
+          v-model="oldPasswordValue"
           type="password"
           label="Old Password"
         />
@@ -92,7 +92,7 @@ export default {
       isSet: true,
       password: '',
       confirmPassword: '',
-      oldPassword: '',
+      oldPasswordValue: '',
       reset: false, // setting a password for the first time, or changing to a new password
       alert: '',
       alertType: 'success',

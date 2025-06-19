@@ -28,7 +28,7 @@
         <v-row>
           <v-col>
             <v-text-field
-              v-model="startDate"
+              v-model="beginDate"
               label="Start Date"
               type="date"
               :max="todaysDate"

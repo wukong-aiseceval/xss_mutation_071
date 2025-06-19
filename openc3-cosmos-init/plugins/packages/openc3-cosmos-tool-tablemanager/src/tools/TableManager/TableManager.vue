@@ -23,7 +23,7 @@
 <template>
   <div>
     <top-bar :menus="menus" :title="title" />
-    <v-snackbar v-model="showReadOnlyToast" top :timeout="-1" color="orange">
+    <v-snackbar v-model="displayReadOnlyMessage" top :timeout="-1" color="orange">
       <v-icon> mdi-pencil-off </v-icon>
       {{ lockedBy }} is editing this script. Editor is in read-only mode
       <template v-slot:action="{ attrs }">
@@ -41,7 +41,7 @@
           v-bind="attrs"
           @click="
             () => {
-              showReadOnlyToast = false
+              displayReadOnlyMessage = false
             }
           "
         >
