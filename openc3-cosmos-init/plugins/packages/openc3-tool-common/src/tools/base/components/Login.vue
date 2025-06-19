@@ -31,7 +31,7 @@
       <v-form>
         <v-text-field
           v-if="isSet && reset"
-          v-model="oldPassword"
+          v-model="previousPassword"
           type="password"
           label="Old Password"
         />

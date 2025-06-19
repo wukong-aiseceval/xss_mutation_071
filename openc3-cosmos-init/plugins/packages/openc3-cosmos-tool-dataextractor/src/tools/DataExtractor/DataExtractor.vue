@@ -92,7 +92,7 @@
       </v-container>
       <v-toolbar class="pl-3">
         <v-progress-circular :value="progress" />
-        &nbsp; Processed: {{ totalPacketsReceived }} packets,
+        &nbsp; Processed: {{ receivedPacketCount }} packets,
         {{ totalItemsReceived }} items
         <v-spacer />
         <v-btn

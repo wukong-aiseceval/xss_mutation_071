@@ -51,7 +51,7 @@
     </v-snackbar>
     <v-file-input
       show-size
-      v-model="fileInput"
+      v-model="selectedFileForUpload"
       ref="fileInput"
       accept=".bin"
       data-test="file-input"
